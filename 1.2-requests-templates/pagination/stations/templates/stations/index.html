@@ -52,3 +52,51 @@
 </div>
 </body>
 </html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Bus Stations</title>-->
+<!--    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">-->
+<!--    <link rel="stylesheet" href="{% static 'css/skeleton.css' %}">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <table class="u-full-width">-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>Name</th>-->
+<!--                <th>Street</th>-->
+<!--                <th>District</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--            {% for station in bus_stations %}-->
+<!--                <tr>-->
+<!--                    <td>{{ station.Name }}</td>-->
+<!--                    <td>{{ station.Street }}</td>-->
+<!--                    <td>{{ station.District }}</td>-->
+<!--                </tr>-->
+<!--            {% endfor %}-->
+<!--        </tbody>-->
+<!--    </table>-->
+
+<!--    <div class="pagination">-->
+<!--        <span class="step-links">-->
+<!--            {% if page.has_previous %}-->
+<!--                <a href="?page=1">&laquo; first</a>-->
+<!--                <a href="?page={{ page.previous_page_number }}">previous</a>-->
+<!--            {% endif %}-->
+
+<!--            <span class="current">-->
+<!--                Page {{ page.number }} of {{ page.paginator.num_pages }}.-->
+<!--            </span>-->
+
+<!--            {% if page.has_next %}-->
+<!--                <a href="?page={{ page.next_page_number }}">next</a>-->
+<!--                <a href="?page={{ page.paginator.num_pages }}">last &raquo;</a>-->
+<!--            {% endif %}-->
+<!--        </span>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->

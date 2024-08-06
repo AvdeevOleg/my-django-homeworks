@@ -14,8 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+# recipes/recipes/urls.py
+from django.contrib import admin
 from django.urls import path
+from calculator.views import recipe_view  # Импортируем view из приложения calculator
 
 urlpatterns = [
-    # здесь зарегистрируйте вашу view-функцию
+    path('admin/', admin.site.urls),
+    path('<str:dish>/', recipe_view, name='recipe'),  # Добавляем маршрут для рецептов
 ]

@@ -28,3 +28,17 @@ DATA = {
 #     'ингредиент2': количество2,
 #   }
 # }
+def recipe_view(request, dish):
+    servings = request.GET.get('servings', '1')
+    try:
+        servings = int(servings)
+    except ValueError:
+        servings = 1
+
+    recipe = DATA.get(dish, {})
+    scaled_recipe = {ingredient: round(amount * servings, 1) for ingredient, amount in recipe.items()}
+
+    context = {
+        'recipe': scaled_recipe
+    }
+    return render(request, 'calculator/index.html', context)
