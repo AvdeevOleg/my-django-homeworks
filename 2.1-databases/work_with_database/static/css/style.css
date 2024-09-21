@@ -1,19 +1,27 @@
 .header {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .phone {
     margin: 30px;
     display: inline-block;
     width: 250px;
+    vertical-align: left;
+}
+
+.phone img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 .sort-block .sort-item {
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 .price {
     font-weight: bold;
 }
+
 
