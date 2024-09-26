@@ -1,0 +1,29 @@
+[
+  {
+    "model": "articles.scope",
+    "pk": 1,
+    "fields": {
+      "tag": 1,
+      "article": 1,
+      "is_main": false
+    }
+  },
+  {
+    "model": "articles.scope",
+    "pk": 2,
+    "fields": {
+      "tag": 2,
+      "article": 2,
+      "is_main": true
+    }
+  },
+  {
+    "model": "articles.scope",
+    "pk": 3,
+    "fields": {
+      "tag": 3,
+      "article": 3,
+      "is_main": true
+    }
+  }
+]

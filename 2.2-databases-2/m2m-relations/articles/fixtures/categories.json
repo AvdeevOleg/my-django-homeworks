@@ -1,0 +1,23 @@
+[
+  {
+    "model": "articles.category",
+    "pk": 1,
+    "fields": {
+      "name": "Наука"
+    }
+  },
+  {
+    "model": "articles.category",
+    "pk": 2,
+    "fields": {
+      "name": "Культура"
+    }
+  },
+  {
+    "model": "articles.category",
+    "pk": 3,
+    "fields": {
+      "name": "Общество"
+    }
+  }
+]

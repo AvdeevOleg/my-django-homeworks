@@ -1,0 +1,23 @@
+[
+  {
+    "model": "articles.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Здоровье"
+    }
+  },
+  {
+    "model": "articles.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Исследования"
+    }
+  },
+  {
+    "model": "articles.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Игрушки"
+    }
+  }
+]
