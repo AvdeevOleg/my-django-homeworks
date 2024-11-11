@@ -4,14 +4,12 @@ from django.db import models
 
 class AdvertisementStatusChoices(models.TextChoices):
     """Статусы объявления."""
-
     OPEN = "OPEN", "Открыто"
     CLOSED = "CLOSED", "Закрыто"
 
 
 class Advertisement(models.Model):
     """Объявление."""
-
     title = models.TextField()
     description = models.TextField(default='')
     status = models.TextField(
@@ -28,3 +26,6 @@ class Advertisement(models.Model):
     updated_at = models.DateTimeField(
         auto_now=True
     )
+
+    def __str__(self):
+        return self.title
